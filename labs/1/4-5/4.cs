@@ -55,7 +55,7 @@ namespace RunProgram
         }
     }
 
-    public sealed class Programer
+    public sealed partial class Programer
     {
         public string FullName
         { get; private set; }
