@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     class Printer
     {
         public Type IAmPrinting(Software obj)

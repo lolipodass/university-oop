@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public class Minesweeper : Game
     {
         public Minesweeper() : base("Minesweeper", GameType.puzzle) { }

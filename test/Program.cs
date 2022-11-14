@@ -1,49 +1,44 @@
-﻿namespace Name
+﻿using System.Security.Cryptography;
+using System.Text;
+namespace Name
 {
     public class Program
     {
-
         static void Main(string[] args)
         {
-
-
-
-
-            Shop shop1 = new Shop(new[] { "elem1", "elem2", "elem3", "elem4" },
-                            new[] { 1, 2, 3, 4 }, 4);
-
-            Shop shop2 = new Shop(new[] { "elem1", "elem2", "elem3", "elem4", "elem5" },
-                            new[] { 1, 2, 3, 4, 5 }, 5);
-
-            Console.WriteLine(shop1.Compare(shop2));
-            Console.WriteLine(shop2.Compare(shop1));
-
-
-
-            int[,] arr = new int[8, 8];
-            for (int i = 0; i < 8; i++)
+            string path = @"C:\Users\joper\Desktop\-Flesha\software\C#\test\";
+            var message = Encoding.UTF8.GetBytes("Hello  ");
+            using (FileStream fs = File.Create(path + "hash.txt"))
             {
-                for (int j = 0; j < 8; j++)
+
+                using (var alg = SHA512.Create())
                 {
-                    if ((i % 2 == 0 && j % 2 == 1) || (i % 2 == 1 && j % 2 == 0))
-                        arr[i, j] = 1;
+                    var hashValue = alg.ComputeHash(message);
+                    fs.Write(hashValue);
+                    fs.Flush();
                 }
             }
 
-
-            for (int i = 0; i < 8; i++)
+            using (var alg = new RSACryptoServiceProvider(2048))
             {
-                for (int j = 0; j < 8; j++)
+                var crypt = alg.Encrypt(message, true);
+                using (FileStream fs = File.Create(path + "crypted.txt"))
                 {
-                    Console.Write(arr[i, j] + ", ");
+                    fs.Write(crypt);
+                    fs.Flush();
                 }
-                Console.Write('\n');
+                var decrypt = alg.Decrypt(crypt, true);
+                using (FileStream fs = File.Create(path + "decrypted.txt"))
+                {
+                    fs.Write(decrypt);
+                    fs.Flush();
+                }
+                using (FileStream fs = File.Create(path + "keys.txt"))
+                {
+                    fs.Write(Encoding.UTF8.GetBytes(alg.ToXmlString(true)));
+                    fs.Flush();
+                }
             }
-
-            // string str;
-
-            // str = Console.ReadLine();
-            // Console.WriteLine(str);
         }
     }
 }

@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public class Word : TextEditor
     {
         public Word() : base("word") { }

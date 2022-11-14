@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public class Conficker : Worm
     {
         public Conficker() : base("Conficker") { }

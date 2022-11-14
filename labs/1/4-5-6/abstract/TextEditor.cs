@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public abstract class TextEditor : Software
     {
         public TextEditor() : base("Nameless Text Editor") { }

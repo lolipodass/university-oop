@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public class Worm : Virus, IOperations
     {
         public Worm() : base("Nameless Worm") { }

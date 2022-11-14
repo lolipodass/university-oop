@@ -2,6 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace RunProgram
 {
+    [Serializable]
     public abstract class Software : IComparable
     {
         public string Name

@@ -1,11 +1,13 @@
 
 namespace RunProgram
 {
+    [Serializable]
     public enum GameType
     {
         shooter, arcade, puzzle,
         adventure, simulator, role_play, nothing
     }
+    [Serializable]
     public class Game : Software, IOperations
     {
         public GameEngine gameEngine

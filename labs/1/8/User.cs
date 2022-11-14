@@ -1,0 +1,8 @@
+namespace RunProgram
+{
+    class User
+    {
+
+    }
+
+}

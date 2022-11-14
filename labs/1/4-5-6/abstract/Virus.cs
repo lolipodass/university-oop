@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public abstract class Virus : Software
     {
         public Virus() : base("Nameless Virus") { }

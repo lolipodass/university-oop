@@ -1,5 +1,6 @@
 namespace RunProgram
 {
+    [Serializable]
     public class GameEngine : Software, IOperations
     {
         public GameEngine() : base("Nameless GameEngine") { }
