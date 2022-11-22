@@ -4,7 +4,7 @@ namespace RunProgram
 {
     [Serializable]
     public class Vector<T> : ICollection<T>
-    // where T : Software
+    where T : notnull
     {
         private T[] _array;
         public int length
@@ -67,6 +67,7 @@ namespace RunProgram
 
         public bool IsEmpty() => _array == null ? true : false;
 
+#pragma warning disable SYSLIB0011
         public static void Serializable(Vector<T> elem)
         {
             BinaryFormatter Formatter = new BinaryFormatter();
@@ -83,7 +84,7 @@ namespace RunProgram
                 Console.WriteLine(Formatter.Deserialize(fs));
             }
         }
-
+#pragma warning restore SYSLIB0011
 
         public override bool Equals(object? obj)
         {
