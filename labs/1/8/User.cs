@@ -18,7 +18,7 @@ namespace RunProgram
         {
             EventShrink?.Invoke(distance);
         }
-
+    
     }
 
 }

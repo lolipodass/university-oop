@@ -1,6 +1,6 @@
 namespace RunProgram
 {
-    class Program
+    class Program8
     {
         static void Main(string[] args)
         {
