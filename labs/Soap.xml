@@ -1,0 +1,10 @@
+﻿<wrapper>
+  <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="id1" CreationDate="2002-05-02">
+    <GroupName xsi:type="xsd:string">.NET</GroupName>
+    <PosInt xsi:type="xsd:nonNegativeInteger">10000</PosInt>
+    <GroupVehicle href="#id2" />
+  </Group>
+  <Vehicle id="id2" d2p1:type="Vehicle" xmlns:d2p1="http://www.w3.org/2001/XMLSchema-instance">
+    <licenseNumber xmlns:q1="http://www.w3.org/2001/XMLSchema" d2p1:type="q1:string">1234</licenseNumber>
+  </Vehicle>
+</wrapper>

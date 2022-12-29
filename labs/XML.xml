@@ -1,0 +1,34 @@
+﻿<wrapper>
+  <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GroupName>.DA</GroupName>
+    <Today>2022-12-29T13:41:49.9925057+03:00</Today>
+    <PositiveInt>2000</PositiveInt>
+    <GroupVehicle>
+      <licenseNumber>4321</licenseNumber>
+    </GroupVehicle>
+  </Group>
+  <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GroupName>.DA</GroupName>
+    <Today>2022-12-29T13:41:50.0018408+03:00</Today>
+    <PositiveInt>2000</PositiveInt>
+    <GroupVehicle>
+      <licenseNumber>4321</licenseNumber>
+    </GroupVehicle>
+  </Group>
+  <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GroupName>.DA</GroupName>
+    <Today>2022-12-29T13:41:50.0019265+03:00</Today>
+    <PositiveInt>2000</PositiveInt>
+    <GroupVehicle>
+      <licenseNumber>4321</licenseNumber>
+    </GroupVehicle>
+  </Group>
+  <Group xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <GroupName>.DA</GroupName>
+    <Today>2022-12-29T13:41:50.0019484+03:00</Today>
+    <PositiveInt>2000</PositiveInt>
+    <GroupVehicle>
+      <licenseNumber>4321</licenseNumber>
+    </GroupVehicle>
+  </Group>
+</wrapper>

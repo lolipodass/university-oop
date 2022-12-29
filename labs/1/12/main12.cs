@@ -1,7 +1,7 @@
 namespace RunProgram
 {
 
-    public class Program
+    public class Program12
     {
 
         static void Main(string[] args)
